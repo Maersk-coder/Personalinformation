@@ -3,12 +3,14 @@
 The aim in these exercises where to create 3 classes. A person class, address class and a MyDate class. The goal here were to make a codetester to run all the classes together (call them into the tester)
 
 Project structure
+```bash
 Lektion 9/
 └── SRC/
     ├── Address.java
     ├── MyDate.java
     ├── Person.java   ← Calls Address and MyDate
     └── CodeTester.java
+```
 
 To run: 
 ```bash
