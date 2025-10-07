@@ -1,8 +1,10 @@
 # How to create a person in Java
 
-The aim in these exercises where to create 3 classes. A person class, address class and a MyDate class. The goal here were to make a codetester to run all the classes together (call them into the tester)
+This project demonstrates basic object-oriented programming concepts in Java — including class composition, encapsulation, and copy constructors.
 
-Project structure
+The main idea is that the Person class brings everything together by using the Address and MyDate classes to represent a complete person.
+
+# Project structure
 ```bash
 Lektion 9/
 └── SRC/
@@ -17,17 +19,40 @@ To run:
 Lektion 9/SRC/CodeTester.java
 ```
 
-Address class: Address.java
-Creating an address with street and city 
-Adding a toString method
+# Classes Overview
+* Address.java
 
-MyDate class: MyDate.java
-Creating days, months and years. 
-Counting days between dates.
-Test equality of functions. 
+Represents an address with street and city attributes.
 
-Person class: Person.java
-Creating a person
-Using data from Address class and MyDate class to add a birthday and address
-Using copy constructor to be able to change address (moving) 
+Includes a toString() method for readable output.
+
+* MyDate.java
+
+Represents a date with day, month, and year.
+
+Includes methods to:
+
+Calculate the number of days between two dates.
+
+Test equality between two MyDate objects.
+
+* Person.java
+
+The main class that ties everything together.
+
+* Uses:
+
+Address to store where the person lives.
+
+MyDate to store the person’s birthday.
+
+* Includes:
+
+A copy constructor to allow address changes (e.g., moving).
+
+A toString() method to display complete person information.
+
+CodeTester.java
+
+The test class used to create objects from all the other classes and verify that they work together correctly.
 
